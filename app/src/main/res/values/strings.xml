@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Pollution track</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="numero_de_complejos">Numero de complejos:</string>
+    <string name="emisiones">Emisiones:</string>
+    <string name="ubicaci_n_actual">Ubicación actual</string>
+    <string name="municipios">Municipios</string>
+    <string name="provincias">Provincias</string>
+    <string name="comunidades_autonomas">Comunidades autónomas</string>
+    <string name="sobre_la_aplicaci_n">Sobre la aplicación</string>
+    <string name="preguntaHace">¿Qué hace?</string>
+    <string name="respuestaHace">Muestra las emisiones, contaminación y complejos industriales que hay en España</string>
+    <string name="preguntaComo">¿Cómo lo hace?</string>
+    <string name="respuestaComo">Calcula el total de emisiones en el aire de todos los complejos con datos con una fórmula que asigna pesos a cada contaminante.</string>
+    <string name="preguntaUso">¿Cómo se usa?</string>
+    <string name="respuestaUso">Para buscar las emisiones totales o fabricas puedes buscar por municipio, provincia o comunidad autonoma. También puedes buscar por ubicación actual con la primera opción que aparece en el menu</string>
+    <string name="preguntaDonde">¿De dónde vienen los datos?</string>
+    <string name="respuestaDonde">Los datos son obtenidos del Registro Estatal de Emisiones y Fuentes Contaminantes del Ministerio de Agricultura, Alimentación y Medio Ambiente de España</string>
+    <string name="id_complejo">ID complejo:</string>
+    <string name="empresa">Empresa:</string>
+    <string name="direccion">Direccion:</string>
+    <string name="provincia">Provincia:</string>
+    <string name="comunidad">Comunidad:</string>
+    <string name="actividad">Actividad:</string>
+    <string name="cantidad_residuo">Cantidad residuo:</string>
+    <string name="residuo">Residuo:</string>
+    <string name="tratamiento">Tratamiento:</string>
+</resources>

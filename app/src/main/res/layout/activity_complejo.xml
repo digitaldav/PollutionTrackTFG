@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:background="@color/place_autocomplete_separator">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".Sistema.DatosComplejo"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/border_sombras"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Complejo"
+                android:id="@+id/textComplejo"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="60dp" />
+
+            <Button
+                android:text="Mapa"
+                android:id="@+id/mapaComplejo"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_height="50dp"
+                android:layout_width="60dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border_sombras">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/id_complejo"
+                    android:id="@+id/idText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="id_complejo"
+                    android:id="@+id/textoIDComplejo"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/idText"
+                    android:layout_toEndOf="@+id/idText"
+                    android:layout_marginLeft="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/empresa"
+                    android:id="@+id/empresaText"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="empresa"
+                    android:id="@+id/textoEmpresaComplejo"
+                    android:layout_alignTop="@+id/empresaText"
+                    android:layout_toRightOf="@+id/empresaText"
+                    android:layout_toEndOf="@+id/empresaText"
+                    android:layout_marginLeft="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/direccion"
+                    android:id="@+id/direccionText"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="direccion"
+                    android:id="@+id/textoDireccionComplejo"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/direccionText"
+                    android:layout_toEndOf="@+id/direccionText"
+                    android:layout_marginLeft="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/provincia"
+                    android:id="@+id/provText"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="provincia"
+                    android:id="@+id/textoProvinciaComplejo"
+                    android:layout_alignTop="@+id/provText"
+                    android:layout_toRightOf="@+id/provText"
+                    android:layout_toEndOf="@+id/provText"
+                    android:layout_marginLeft="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/comunidad"
+                    android:id="@+id/ccaaText"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="comunidad"
+                    android:id="@+id/textoComunidadComplejo"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/ccaaText"
+                    android:layout_toEndOf="@+id/ccaaText"
+                    android:layout_marginLeft="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/actividad"
+                    android:id="@+id/trabajoText"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="actividad"
+                    android:id="@+id/textoActividadComplejo"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/trabajoText"
+                    android:layout_toEndOf="@+id/trabajoText"
+                    android:layout_marginLeft="10dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/cuadroEmision"
+            android:background="@drawable/border_sombras">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Cantidad: "
+                    android:id="@+id/contaminacionText"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="cantidad"
+                    android:id="@+id/textoCantidadEmision"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/contaminacionText"
+                    android:layout_toEndOf="@+id/contaminacionText"
+                    android:layout_marginLeft="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/tipoECtext"
+                    android:layout_marginTop="10dp"
+                    android:text="Emision: " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/textoEmisionComplejo"
+                    android:text="emision"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/tipoECtext"
+                    android:layout_toEndOf="@+id/tipoECtext"
+                    android:layout_marginLeft="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Medio: "
+                    android:id="@+id/medioText"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="medio"
+                    android:id="@+id/textoMedioEmision"
+                    android:layout_alignTop="@+id/medioText"
+                    android:layout_toRightOf="@+id/medioText"
+                    android:layout_toEndOf="@+id/medioText"
+                    android:layout_marginLeft="10dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/cuadroResiduo"
+            android:background="@drawable/border_sombras">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/cantidad_residuo"
+                    android:id="@+id/cantidadRText"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="cantidad"
+                    android:id="@+id/textoCantidadResiduo"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/cantidadRText"
+                    android:layout_toEndOf="@+id/cantidadRText"
+                    android:layout_marginLeft="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/residuoText"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/residuo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:id="@+id/textoResiduoComplejo"
+                    android:text="residuo"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/residuoText"
+                    android:layout_toEndOf="@+id/residuoText"
+                    android:layout_marginLeft="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/tratamiento"
+                    android:id="@+id/tratamientoText"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="tratamiento"
+                    android:id="@+id/textoTratamientoResiduo"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/tratamientoText"
+                    android:layout_toEndOf="@+id/tratamientoText"
+                    android:layout_marginLeft="10dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
